@@ -109,7 +109,10 @@
 /* -----------skills start------ */
 
 #skills{
-    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Learning-books-education-jackets-light-2048x1152-wallpaper.jpg) ;
+    background-image: url(https://www.languagemagazine.com/wp-content/uploads/2021/07/GettyImages-1270373000.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     /* background-color: aquamarine; */
 }
 #skills{
@@ -151,8 +154,12 @@
 /* -----------wducation end------ */
 
 #education{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    background-image: url(https://img.freepik.com/premium-photo/educational-concept-books-blue_387680-275.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #education .edu-title p{
     /* text-align: center; */
@@ -166,7 +173,7 @@
     border-radius: 30%;
 }
 
-/* -----------wducation end------ */
+/* -----------education end------ */
 /* -----------work start------ */
 
 .work-list {
