@@ -1,245 +1,452 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: monospace;
-}
-
-/* ---------navigation bar closed------- */
-
-#navigation-bar {
+    padding: 0;
+  }
+  
+  .nav-section {
     width: 100%;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
     height: 70px;
-    background-color: aqua;
+    background-color: #004aac;
     position: fixed;
-}
-.nav-area a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
-}
-.nav-area a:visited{
-    background-color: white;
-}
-.nav-area {
+  }
+  
+  nav .nav-section .nav-area {
+    width: 100%;
+    margin: 0;
     padding: 0;
-    margin: 1px 0;
-    display: grid;
-    grid-template-columns: 140px auto;
-}
-.nav-section {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  nav .nav-menu {
+    width: 100%;
     display: flex;
     justify-content: end;
-}
-.nav-area li {
-    margin: 0 20px;
-    padding: 22px 30px;
+    align-items: stretch;
+  }
+  nav .nav-1 {
+    width: 100%;
+    margin-left: 80px;
+  }
+  .nav-area li {
+    width: 100%;
     list-style: none;
     cursor: pointer;
-}
-.nav-area li:hover{
-    background-color: rgb(220, 220, 220);
-    border-radius: 10%;
-}
-
-/* ---------navigation bar closed------- */
-/* -----------Home start------ */
-
-.space-nav{
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav-list {
     width: 100%;
-    height: 50px;
-}
-.bd-height {     /* ----------about, skill, education, all features---- */
+    margin: 25px 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    nav .nav-1 {
+      width: 100%;
+      margin-left: 5px;
+    }
+    .nav-list {
+      width: 100%;
+      margin: 25px 10px;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    nav .nav-1 {
+      width: 100%;
+      margin-left: 80px;
+    }
+    .nav-list {
+      width: 100%;
+      margin: 25px 10px;
+    }
+  }
+  
+  /* -------------home---------- */
+  
+  /* -------navigation close ------------ */
+  
+  .icon-section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* position: absolute; */
+    /* display: block; */
+    bottom: 0;
+    right: 0;
+  }
+  .icon {
+    height: 400px;
+    width: 400px;
+    background-image: linear-gradient(#1720ff, #060117);
+  }
+  .icon-2 {
+    border-radius: 40% 40% 0 0;
+  }
+  .icon-1 {
+    border-radius: 50%;
+    margin-left: -150px;
+    margin-bottom: -150px;
+  }
+  
+  .img-icon .icon-2 img {
+    /* position: absolute; */
+    display: block;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* --------------------icon close------------- */
+  
+  #home {
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100vh;
-    display: grid;
-    /* background-color: antiquewhite; */
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    background-color: #090766;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-items: center;
-    text-align: center;
-}
-#home .bd-height img{
+  }
+  
+  #home img {
     border-radius: 50%;
-}
-#home .bd-height h1{
-    font-size: 40px;
-}
-#home .bd-height h1 span{
-    font-size: 40px;
-    background-color: blue;
-    border-radius: 10%;
-    padding: 0 15px 0 15px;
-}
-
-/* -----------Home close------ */
-/* -----------about start------ */
-
-#about{
-    background-image: url(https://img.freepik.com/premium-photo/educational-concept-books-blue_387680-275.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.about-me .about-text p {
-    text-align: center;
-    font-family: "Sofia";
-    font-weight: 600;
-    /* color: white; */
+    margin-top: 70px;
+  }
+  #home .title-s-1 {
+    /* padding: 5px; */
+  }
+  #home .title-s-1 h1 {
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #home {
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+    }
+    #home img {
+      width: 250px;
+      margin-top: 30px;
+    }
+    #home .title-s-1 h1 {
+      margin-top: 100px;
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    #home {
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+    }
+    #home img {
+      width: 250px;
+      margin-top: 30px;
+    }
+    #home .title-s-1 h1 {
+      margin-top: 100px;
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+  
+  /* ------------about ----------- */
+  
+  #about {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+  }
+  
+  /* .space-nav{
+      width: 100%;
+      height: 70px;
+    } */
+  /* #about .icon2{
+      height: 10px;
+      width: 10px;
+      font-size: 30px;
+      color: black;
+      text-align: center;
+      display: flex;
+    }
+    #about .icon2 i{
+      margin: 215px 310px;
+    
+    } */
+  
+  .about-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-p {
+    width: 400px;
     font-size: 20px;
-    padding: 20px;
-
-}
-.about-me h1{
     text-align: center;
-    margin-bottom: 30px;
-}
-#about{
-    display: flex;
-    flex-direction: column;
-}
-.about-img img{
-    border-radius: 30%;
-}
-
-/* -----------about close------ */
-/* -----------skills start------ */
-
-#skills{
-    background-image: url(data:image/jpeg;base64,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) ;
+    text-align: justify;
+  
+    /* margin-left: -220px; */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about-content {
+      flex-direction: column;
+    }
+    .about-p {
+      width: 340px;
+      margin-top: 100px;
+    }
+    .about-content img {
+      width: 350px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+    .about-p {
+      width: 340px;
+      margin-top: 100px;
+    }
+    .about-content img {
+      width: 350px;
+    }
+  }
+  
+  /* -----------skills start------ */
+  
+  #skills {
+    width: 100%;
+    height: 100vh;
+    background-color: #090766;
+    /* background-color: aquamarine; */
+  }
+  .bd-height {
+    width: 100%;
+    height: 100vh;
+    background-color: #090766;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-color: aquamarine; */
-}
-#skills{
     display: flex;
-    flex-direction: column;
-}
-.skill-img {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .skill-img {
     display: grid;
-    grid-template: 110px / auto auto auto auto;
+    grid-template: 110px / auto auto auto;
     gap: 40px;
     align-items: center;
-}
-
-.skill-img img {
+  }
+  
+  .skill-img img {
     border-radius: 20%;
-}
-
-.skill-list p {
-    background-color: rgb(0, 200, 255);
-    margin: 10px;
-    text-align: center;
-    border-radius: 13px;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px 20px rgb(242, 186, 17) inset;
-}
-
-.skill-list {
+  }
+  .skill-list {
     display: grid;
     grid-template: 60px / auto auto auto auto;
-}
-
-#skills .title h1 {
+  }
+  
+  #skills .title h1 {
+    color: white;
+  }
+  .skill-list p {
+    /* background-color: rgb(0, 200, 255); */
+    background-color: #b8e4ed;
+    margin: 5px 6px;
+    text-align: center;
+    border-radius: 11px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 3px grey;
+    font-size: 1.2rem;
+    font-weight: 550;
+    cursor: pointer;
+    color: purple;
+  }
+  
+  #skills .title h1 {
     text-align: center;
     margin-bottom: 50px;
-}
-
-/* -----------skill end------ */
-/* -----------wducation end------ */
-
-#education{
-    /* display: flex; */
-    flex-direction: column;
-    background-image: url(https://img.freepik.com/premium-photo/educational-concept-books-blue_387680-275.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#education .edu-title p{
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #skills {
+      width: 100%;
+      padding: 0 4px;
+    }
+    .bd-height {
+      display: flex;
+      flex-direction: column;
+    }
+    .skill-list {
+      grid-template: 60px / auto auto auto;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #skills {
+      width: 100%;
+      padding: 0 4px;
+    }
+    .bd-height {
+      display: flex;
+      flex-direction: column;
+    }
+    .skill-list {
+      grid-template: 60px / auto auto auto;
+    }
+  }
+  
+  /* -----------skill end------ */
+  
+  /* -----------Education end------ */
+  
+  #education {
+    padding: 0;
+    margin: 0;
+  }
+  #education .edu-height {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(166, 149, 149);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+  }
+  #education .edu-title {
+    padding: 30px;
+    width: 50%;
+  }
+  #education .edu-title p {
     /* text-align: center; */
     font-family: "Sofia";
     font-weight: 600;
     /* color: white; */
     font-size: 20px;
     padding: 40px;
-}
-#education .edu-img img{
+  }
+  #education .edu-img img {
     border-radius: 30%;
-}
-
-/* -----------education end------ */
-/* -----------work start------ */
-
-.work-list {
-    height: 220px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #education .edu-height {
+      flex-direction: column;
+    }
+    #education .edu-title {
+      width: 70%;
+    }
+    #education .edu-img img {
+      width: 00px;
+    }
+    #education .edu-title p {
+      padding: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #education .edu-title p {
+      padding: 0px;
+    }
+    #education .edu-title {
+      width: 70%;
+    }
+    #education .edu-img img {
+      width: 250px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  /* -----------education end------ */
+  
+  /* -----------work start------ */
+  
+  #work {
+    padding: 0;
+    margin: 0;
     width: 100%;
-    
-}
-
-.work-list h2 {
-    text-align: center;
-    padding-top: 60px;
-}
-.work-list h1{
-    text-align: center;
-    margin-top: 50px;
-}
-
-#work{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(https://img.freepik.com/free-photo/red-white-triangular-cardboard-sheets-with-copy-space_23-2148320474.jpg);
     background-position: center;
+  }
+  
+  /* 
+    .work-list {
     
-    /* display: flex;
-    flex-direction: column; */
-}
-
-/* -----------work end------ */
-/* -----------contact start------ */
-
-/* -----------contact end------ */
-/* -----------social media & footer- start----- */
-
-.social-media{
+    } */
+  
+  .work-list h2 {
+    text-align: center;
+  }
+  .work-list h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* -----------work end------ */
+  /* -----------contact start------ */
+  
+  /* -----------contact end------ */
+  /* -----------social media & footer- start----- */
+  
+  .social-media {
     text-align: center;
     padding: 20px;
-}
-
-footer .social-media .fa {
+  }
+  
+  footer .social-media .fa {
     /* margin: 0; */
     font-size: 30px;
     color: white;
     padding: 10px;
-}
-
-footer .social-media i:hover {
+  }
+  
+  footer .social-media i:hover {
     background-color: rgb(0, 128, 4);
     box-shadow: 5px 10px 20px rgb(17, 21, 242) inset;
     border-radius: 10px;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: rgb(47, 53, 47);
     padding: 20px;
-}
-
-.copyright {
+  }
+  
+  .copyright {
     text-align: center;
-    font-family: monospace;
+    font-family: sans-serif;
     color: rgb(26, 195, 195);
-}
-
-#footer hr{
+    font-size: 15px;
+  }
+  
+  #footer hr {
     width: 40%;
     margin: 20px auto 20px;
-}
-
-/* -----------social media & footer end------ */
-
-
-
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .social-media {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+  }
+  
+  /* -----------social media & footer end------ */
+  
